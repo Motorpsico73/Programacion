@@ -1,0 +1,31 @@
+#articulos{
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1615488861889-8T4BIEK4P4SF74VEHJ2L/13.jpg);
+    background-position: center;
+    
+}
+
+#articulos .contenedor{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+#articulos img{
+    max-width: 280px;
+    height: 250px;
+}
+
+#articulos article{
+    max-width: 280px;
+    text-align: center;
+    margin: 15px;
+}
+
+h3,h4{
+    text-align: center;
+}

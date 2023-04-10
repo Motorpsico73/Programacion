@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Tablas</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-break-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            widths: 100%;
+            margin: 20px auto
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px
+        }
+        table#con_estilos{
+            background-color: lightcyan;
+        }
+        table#con_estilos tr:nth-child(even){
+            background-color: lightseagreen;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PRACTICAS CON TABLAS</h1>
+    <table>
+        <caption>Listado de alumnos</caption>
+        <colgroup span="2"></colgroup>
+        <colgroup>
+            <col span="2" style="background-color: lightsalmon ">
+
+        </colgroup>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th colspan="2">Telefono</th>
+        </tr>
+        <tr>
+            <td>Vanesa</td>
+            <td>Paez</td>
+            <td>1234567</td>
+            <td>6421211</td>
+        </tr>
+        <tr>
+            <td>Nicolas</td>
+            <td>Santucholi</td>
+            <td>098766</td>
+            <td>6778890</td>
+        </tr>
+        <tr>
+            <td>Nala</td>
+            <td>Baez Santucho</td>
+            <td>1221212</td>
+            <td>1212121</td>
+
+        </tr>
+
+
+    </table>
+
+    <br>
+
+    <table>
+
+        <tr>
+            <th>Nombre:</th>
+            <td>Carlos</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefonos</th>
+            <td>1122334455</td>
+        </tr>
+        <tr>
+            <td>6655443322</td>
+        </tr>
+    </table>
+    <br>
+    <table id="con_estilos">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th colspan="2">Telefono</th>
+        </tr>
+        <tr>
+            <td>Vanesa</td>
+            <td>Paez</td>
+            <td>1234567</td>
+            <td>6421211</td>
+        </tr>
+        <tr>
+            <td>Nicolas</td>
+            <td>Santucholi</td>
+            <td>098766</td>
+            <td>6778890</td>
+        </tr>
+        <tr>
+            <td>Nala</td>
+            <td>Baez Santucho</td>
+            <td>1221212</td>
+            <td>1212121</td>
+
+        </tr>
+
+
+    </table>
+
+
+</body>
+
+</html>

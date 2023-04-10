@@ -1,0 +1,14 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: #29a387;
+}
+
+th, td {
+    border-style: dotted;
+}
+
+tr:nth-child(even) {
+    background-color: #66ffdb;
+}
+  

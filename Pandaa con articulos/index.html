@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PROYECTO PANDA</h1>
+        <P>APRENDAMOS TODO</P>
+    </header>
+    <section id="contenido">
+    </section>
+    <div id="botones"><button onclick="insertar()">Presionando este boton, vamos a colocar un dato en el cuadro</button></div>
+    <div id="botones"><button onclick="quitar()">Presionando este boton, vamos a borrar contenido en el cuadro</button></div>
+    <section id="articulos">
+        <h3>ARTICULOS COMPUTACION</h3>
+        <div class="contenedor">
+            <article>
+                <img src="https://s3-sa-east-1.amazonaws.com/saasargentina/3RXYc9SCKvxINvBDUVz4/miniatura" alt="">
+                <h4>Cooler CPU Cooler Master Hyper 212 ARGB Intel/AMD (1x12cm)</h4>
+            </article>
+            <article>
+                <img src="https://s3-sa-east-1.amazonaws.com/saasargentina/G7x4UHVXqgS0dARDIAi8/miniatura" alt="">
+                <h4>Tableta Gráfica Genius Mousepen I608X USB</h4>
+            </article>
+            <article>
+                <img src="https://s3-sa-east-1.amazonaws.com/saasargentina/Hfm8X6R3CvrIrc3OAnhv/miniatura" alt="">
+                <h4>Notebook ASUS X515EA Intel I3 1115 G4 | RAM 4GB | SSD 256Gb | 15.6 | X515EA-BR1324</h4>
+            </article>
+            <article>
+                <img src="https://s3-sa-east-1.amazonaws.com/saasargentina/GmqfqcBjzh2eNXpg4kpN/miniatura" alt="">
+                <h4>Disco Externo Toshiba 2TB Canvio Basics USB 3.0</h4>
+            </article>
+        </div>
+   
+        <h3>HOGAR</h3>
+        <div class="contenedor">
+            <article>
+                <img src="https://sodimacar.scene7.com/is/image/SodimacArgentina/1760688?fmt=jpg&fit=fit,1&wid=200&hei=200 " alt="">
+                <h4>Futón Havanna 3 cuerpos 1 plaza de cuero sintético café </h4>
+            </article>
+            <article>
+                <img src="https://sodimacar.scene7.com/is/image/SodimacArgentina/3261565?fmt=jpg&fit=fit,1&wid=200&hei=200 " alt="">
+                <h4> Escritorio simple moderno de</h4>
+
+            </article>
+            <article>
+                <img src="https://sodimacar.scene7.com/is/image/SodimacArgentina/3232867?fmt=jpg&fit=fit,1&wid=200&hei=200 " alt="">
+                <h4> Ricchezze
+                    Placard Tana Eco 6 puertas con</h4>
+
+            </article>
+            <article>
+                <img src="https://sodimacar.scene7.com/is/image/SodimacArgentina/2794896?fmt=jpg&fit=fit,1&wid=200&hei=200 " alt="">
+                <h4> 
+                    Just Home Collection
+                    Juego de comedor Eames mesa redonda + 4 sillas</h4>
+
+            </article>
+            
+        
+        </div>
+
+
+
+    </section>
+
+    <script>
+        let dato = "Bienvenidos al curso de JS";
+        dato += "<br><br><img src='panda.png' width='300'>";
+        function insertar(){
+            document.querySelector("#contenido").innerHTML = dato;
+        }
+
+        function quitar(){
+            document.querySelector("#contenido").innerHTML = "";
+        }
+    </script>
+</body>
+</html>
